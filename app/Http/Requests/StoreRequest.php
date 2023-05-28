@@ -27,7 +27,7 @@ class StoreRequest extends FormRequest
             'content' => 'required|min:7',
             'description' => 'required|min:7|max:500',
             'category_id' => 'required|integer|exists:categories,id',
-            'posted' => 'required'
+            'publicado' => 'required'
         ];
     }
 }
