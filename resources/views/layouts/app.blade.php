@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ __('IUDigiblog') }}</title>
+    <title>{{ __('IUDigiBlog') }}</title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -28,7 +28,7 @@
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <img src="{{ asset('images/png/logo.png') }}" alt="Logo sitio web" style="width: 80px;" />
-                    {{ __('IUDigiblog') }}
+                    {{ __('IUDigiBlog') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
