@@ -26,7 +26,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" href="{{ Auth::user() ? url('/home') : url('/') }}">
                     <img src="{{ asset('images/png/logo.png') }}" alt="Logo sitio web" style="width: 80px;" />
                     {{ __('IUDigiBlog') }}
                 </a>
