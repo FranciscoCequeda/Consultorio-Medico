@@ -1,30 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.app')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bienvenido</title>
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-    <!-- Scripts -->
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-</head>
+@section('content')
+    <div id="slider" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            @foreach ($slides as $index => $slide)
+                <li data-target="#slider" data-slide-to="{{ $index }}" class="{{ $index === 0 ? 'active' : '' }}"></li>
+            @endforeach
+        </ol>
+        <div class="carousel-inner">
+            @foreach ($slides as $index => $slide)
+                <div class="carousel-item {{ $index === 0 ? 'active' : '' }}">
+                    <img src="{{ asset($slide['image']) }}" alt="{{ $slide['title'] }}">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            @endforeach
+        </div>
+        <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
 
-<body>
-    <div class="container">
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class="jumbotron">
+        <h1>¡Bienvenido al blog IUD!</h1>
+        <p>Aqui podras ver las noticias y publicaciones academicas mas relevantes!.</p>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Publicaciones</h5>
+                    <p class="card-text">Podrás ver, crear y editar Publicaciones IUD.</p>
+                    <a href="{{ route('posts.index') }}" class="btn btn-primary">Ir a Publicaciones</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Categorias</h5>
+                    <p class="card-text">Crea las categorías de tus mejores publicaciones IUD.</p>
+                    <a href="{{ route('categories.index') }}" class="btn btn-primary">Ir a Categorias</a>
+                </div>
             </div>
         </div>
     </div>
-</body>
-
-</html>
+@endsection
