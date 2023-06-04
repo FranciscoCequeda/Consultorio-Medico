@@ -24,9 +24,9 @@ use App\Http\Controllers\HomeController;
 
 Auth::routes();
 
-Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('bienvenido');
 
 Route::resource('/posts', PostController::class);
 Route::resource('/categories', CategoryController::class);
 
-Route::get('/', [BienvenidoController::class, 'index'])->name('Bienvenido');
+Route::get('/', [BienvenidoController::class, 'index'])->name('home');
