@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('dashboard.layout')
 @section('content')
     <a class="btn btn-success mt-3" href="{{ route('posts.create') }}">Crear Publicacion</a>
     <table class="table">
