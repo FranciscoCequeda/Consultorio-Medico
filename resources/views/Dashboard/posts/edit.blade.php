@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('dashboard.layout')
 @section('content')
     <div class="content-wrapper">
         <h1>Actualizar publicación: <strong>{{ $post->title }}</strong></h1>

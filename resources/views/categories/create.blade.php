@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('dashboard.layout')
 
 @section('content')
     <h1>Creacion de Categorias</h1>

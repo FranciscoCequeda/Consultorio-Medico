@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Dashboard\PostController;
 use App\Http\Controllers\Dashboard\CategoryController;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +18,12 @@ use App\Http\Controllers\Dashboard\CategoryController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+    if (!Auth::user()) {
+        return view('welcome');
+    } else {
+        return view('dashboard');
+    }
 });
 
 Route::get('/dashboard', function () {

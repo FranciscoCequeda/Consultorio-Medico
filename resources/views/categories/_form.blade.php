@@ -12,7 +12,7 @@
             value="{{ old('description', $category->description) }}">
     </div>
 
-    <input class="btn btn-primary" type="submit" value="Guardar">
-    <a class="btn btn-danger" href="{{ route('categories.index', $category) }}"
+    <input class="btn btn-primary mt-2" type="submit" value="Guardar">
+    <a class="btn btn-danger mt-2" href="{{ route('categories.index', $category) }}"
         style="display: inline-block; margin-left: 10px;">Cancelar</a>
 </form>

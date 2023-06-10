@@ -45,5 +45,5 @@
     </div>
 @endif
 
-<input class="btn btn-primary" type="submit" value="Guardar">
-<a class="btn btn-danger ml-3" href="{{ route('posts.index', $post) }}" style="display: inline-block;">Cancelar</a>
+<input class="btn btn-primary mt-2" type="submit" value="Guardar">
+<a class="btn btn-danger ml-3 mt-2" href="{{ route('posts.index', $post) }}" style="display: inline-block;">Cancelar</a>

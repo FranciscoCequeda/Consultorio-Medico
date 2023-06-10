@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('dashboard.layout')
 
 @section('content')
     <h1>Categoria: <strong>{{ $category->title }}</strong></h1>
