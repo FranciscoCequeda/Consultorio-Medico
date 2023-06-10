@@ -87,7 +87,7 @@
         </div>
         <div class="row">
             <div class="col-sm-6 mr-5">
-                <div class="card-dasboards shadow-lg rounded-lg">
+                <div class="card-dasboards">
                     <div class="card-body">
                         <h5 class="card-title">Categorias</h5>
                         <p class="card-text">Crea Categorias para tus mejores publicaciones!.</p>
@@ -96,7 +96,7 @@
                 </div>
             </div>
             <div class="col-sm-6">
-                <div class="card-dasboards shadow-lg rounded-lg">
+                <div class="card-dasboards">
                     <div class="card-body">
                         <h5 class="card-title">Publicaciones</h5>
                         <p class="card-text">Crea y edita publicaciones personalizadas!.</p>

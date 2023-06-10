@@ -110,3 +110,7 @@ label {
 .logo {
     @apply w-28 justify-center align-middle;
 }
+
+.card-dasboards {
+    @apply motion-safe:hover:scale-[1.01] transition-all shadow-lg rounded-lg;
+}
