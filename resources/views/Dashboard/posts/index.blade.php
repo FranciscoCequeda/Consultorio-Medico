@@ -7,7 +7,6 @@
                 <tr>
                     <th>Titulo</th>
                     <th>Categoria</th>
-                    <th>Descripcion</th>
                     <th>Publicado</th>
                     <th>Acciones</th>
                 </tr>
@@ -17,7 +16,6 @@
                     <tr>
                         <td>{{ $post->title }}</td>
                         <td>{{ $post->category->title }}</td>
-                        <td>{{ $post->description }}</td>
                         <td>{{ $post->publicado == 'Not' ? 'No' : 'Si' }}</td>
                         <td>
                             <a class="btn btn-warning mr-2" href="{{ route('posts.edit', $post) }}"
