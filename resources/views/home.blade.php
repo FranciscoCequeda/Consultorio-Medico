@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<h1><strong>Por favor realiza alguna de las siguientes acciones:</strong></h1>
+    <h1><strong>Por favor realiza alguna de las siguientes acciones:</strong></h1>
     <div class="row">
         <div class="col-sm-6">
             <div class="card">

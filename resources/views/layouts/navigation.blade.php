@@ -16,10 +16,10 @@
                         {{ __('Inicio') }}
                     </x-nav-link>
                     <x-nav-link :href="route('posts.index')" :active="request()->routeIs('posts.index')">
-                        {{ __('Posts') }}
+                        {{ __('Publicaciones') }}
                     </x-nav-link>
                     <x-nav-link :href="route('categories.index')" :active="request()->routeIs('categories.index')">
-                        {{ __('Categories') }}
+                        {{ __('Categorias') }}
                     </x-nav-link>
                 </div>
             </div>
